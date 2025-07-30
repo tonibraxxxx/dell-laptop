@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e1f26, #2b2d42);
+  color: #eee;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: radial-gradient(circle, #ff416c, #ff4b2b);
+  color: white;
+  box-shadow: 0 0 20px #ff4b2b66;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { text-shadow: 0 0 10px #ff6b6b, 0 0 20px #ff6b6b; }
+  100% { text-shadow: 0 0 20px #ff4b2b, 0 0 40px #ff4b2b; }
+}
+
+section.laptop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+section.laptop img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #111;
+}
+
+.specs {
+  max-width: 500px;
+}
+
+.specs h2 {
+  color: #ff4b2b;
+}
+
+.specs span {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+}
+
+.software {
+  padding: 2rem;
+  background-color: #2f3542;
+  border-top: 2px solid #444;
+  border-bottom: 2px solid #444;
+}
+
+.contact {
+  text-align: center;
+  padding: 2rem;
+}
+
+.btn {
+  background-color: #ff416c;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff4b2b;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
